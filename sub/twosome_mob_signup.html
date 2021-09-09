@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>모바일회원가입</title>
+     <link href="css/210607_twosome_mob_signup.css" rel="stylesheet">
+</head>
+
+
+<body>
+<div id="form">
+<form action="" method="POST" autocomplete="off">
+     <fieldset>
+     <legend>개인정보</legend>
+          <div class="header_logo">
+          <a href="https://www.twosome.co.kr:7009/main.asp"target=“blank” title="투썸홈피이동">
+          <img src="img/투썸투명로고.png" alt="web_logo"/></a>
+          </div><!-- header -->
+
+          <div class="join_row_id">
+               <h3 class="join_title">
+                    <label for="id">아이디</label>
+               </h3>
+               <span class="box">
+                    <input type="text" id="id" maxlength="20" required autofocus>
+               </span>
+          </div><!-- .join_row_id-->
+
+          <div class="join_row_ps">
+               <h3 class="join_title">
+                    <label for="ps">비밀번호</label>
+               </h3>
+               <span class="box">
+                    <input type="text" id="ps" maxlength="20" required>
+               </span>
+          </div><!-- .join_row_ps-->
+
+          <div class="join_row_psck">
+               <h3 class="join_title">
+                    <label for="psck">비밀번호 재확인</label>
+               </h3>
+               <span class="box">
+                    <input type="text" id="psck" maxlength="20" required>
+               </span>
+          </div><!-- .join_row_psck--> <!-- 아이디 비밀번호 끝 -->
+
+          <div class="join_row_name">
+               <h3 class="join_title">
+                    <label for="name">이름</label>
+               </h3>
+               <span class="box">
+                    <input type="text" id="name" maxlength="20" required>
+               </span>
+          </div><!-- .join_row_name-->
+  
+
+          <div class="join_row_birth">
+               <h3 class="join_title">
+                    <label for="birth">생년월일</label>
+               </h3>
+               <div class="y_box">
+                    <input type="text_y" id="birth" maxlength="4" placeholder="년(4자)">
+               </div>
+               <span class="m_box">
+               <select>
+                    <option>월</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                    <option>11</option>
+                    <option>12</option>
+               </select>     
+               </span>
+               <div class="d_box">
+                    <input type="text_d" maxlength="2" placeholder="일">
+               </div>
+          </div><!-- .join_row_birth-->
+          <!-- span을 div로 바꾸니 년,일박스 조절됌 -->
+          
+          <div class="join_row_jen">
+               <h3 class="join_title">
+                    <label for="jen">성별</label>
+               </h3>
+               <span class="j_box">
+                    <select>
+                         <option>성별</option>
+                         <option>남자</option>
+                         <option>여자</option>
+                         <option>선택안함</option>
+                    </select>     
+                    </span>
+               </span><!-- .join_row_jen -->
+              
+               <div class="join_row_email">
+                    <h3 class="join_title">
+                         <label for="email">본인확인 이메일</label><span> (선택)</span>
+                    </h3>
+                    
+                    <span class="join_row_e_box">
+                         <input type="text" id="email" placeholder="선택입력">
+                    </span>
+               </div><!-- .join_row_email--> 
+          <!-- 이하 휴대전화 라인이라 묶음 -->
+               <div class="join_row_phone">
+                     <div class="join_row_code">
+                     <h3 class="join_title">
+                         <label for="code">휴대전화</label>
+                    </h3>
+                    <span class="c_box">
+                         <select>
+                              <option>대한민국 +82</option>
+                              <option>가나 +233</option>
+                              <option>호주 +61</option>
+                         </select> 
+                    </span>
+                    <span class="ph_box">
+                         <input type="text" placeholder="전화번호 입력">
+                    </span>
+
+                    <div class="no_bt">
+                         <input type="submit"value="인증번호 받기">
+                    </div>
+
+                    <span class="ph_box">
+                         
+                         <input type="text_no" placeholder="인증번호 입력">
+                    </span>
+                    </div>
+               </div><!-- .join_row_phone -->
+               <div class="join_bt">
+                    <input type="submit" value="가입하기">
+               </div>
+     </fieldset>
+</form>
+</div>
+
+</body>
+</html>
+<!-- 선택했을때 네모박스 안생기게하는법 
+:focus {outline:none;}
+-->

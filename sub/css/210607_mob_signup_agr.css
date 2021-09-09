@@ -1,0 +1,144 @@
+@charset "utf-8";
+@font-face {
+font-family: 'NanumBarunGothic';
+font-style: normal;
+font-weight: 400;
+src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot');
+src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.ttf') format('truetype');
+}
+
+@font-face {
+font-family: 'NanumBarunGothic';
+font-style: normal;
+font-weight: 700;
+src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot');
+src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.ttf') format('truetype')
+}
+
+@font-face {
+font-family: 'NanumBarunGothic';
+font-style: normal;
+font-weight: 300;
+src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot');
+src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.ttf') format('truetype');
+}
+
+.nanumbarungothic * {
+font-family: 'NanumBarunGothic', sans-serif;
+}
+*{margin: 0; padding:0;}
+li{list-style: none;}
+a{text-decoration: none; display: block; color: #333;}
+legend{position: absolute;    left: -99999px;}
+fieldset{border: 0;}
+*{font-family: 'NanumBarunGothic';}
+*:focus {outline:none;}
+/* 기본설정 */
+
+#form{
+     width: 350px;
+     margin:0 auto;
+     padding: 0 13px;
+     background-color: #F9F9F9;
+     font-weight: 400;
+     font-size: 14px;
+}
+
+.header_logo{
+     margin: 69px 0px 40px 0px;
+     text-align: center;}
+     
+.check {
+     color: #707070;
+     margin-bottom: 35px ;
+     height: 20px;
+}
+.check span
+{
+     line-height: 20px;
+}
+.check input[type="checkbox"]
+{
+     vertical-align:middle;
+}
+
+
+.check2 {
+     font-size: 14px;
+     color: #707070;
+     margin-bottom: 7px ;
+}
+.check2 span
+{
+     line-height: 20px;
+}
+
+.check2 input[type="checkbox"]
+{
+     vertical-align:middle;
+}
+
+.must {
+     font-size: 14px;
+     color: #CF0035;
+     font-weight: 600;
+
+}
+textarea {resize: none;
+          width: 350px;
+          height: 200px;
+          border-radius: 30px;
+          padding: 20px;
+          box-sizing: border-box;
+          color: #707070;
+          margin-bottom: 30px;
+          overflow-y: scroll;
+     }
+textarea::-webkit-scrollbar {
+     display:none;
+}
+.check3 {
+     font-size: 14px;
+     color: #707070;
+     margin-bottom: 7px ;
+}
+.check3 span
+{
+     line-height: 20px;
+}
+
+.check3 input[type="checkbox"]
+{
+     vertical-align:middle;
+}
+input[type="reset"]{
+     width: 170px;
+     height: 40px;
+     background-color:#707070 ;
+     border-radius: 30px;
+     border: 0px;
+     font-weight: 600;
+     color: white;
+     float: left;
+     
+}
+.check:last-child{margin-left: 0;}
+
+.check::after{
+     content: '';
+     display: block;
+     clear: both;
+}
+
+
+input[type="button"]{
+     width: 170px;
+     height: 40px;
+     background-color:#CF0035 ;
+     border-radius: 30px;
+     border: 0px;
+     font-weight: 600;
+     color: white;
+     box-sizing: border-box;
+     margin-left: 10px;
+}

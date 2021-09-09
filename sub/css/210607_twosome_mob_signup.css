@@ -1,0 +1,180 @@
+@charset "utf-8";
+@font-face {
+font-family: 'NanumBarunGothic';
+font-style: normal;
+font-weight: 400;
+src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot');
+src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.ttf') format('truetype');
+}
+
+@font-face {
+font-family: 'NanumBarunGothic';
+font-style: normal;
+font-weight: 700;
+src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot');
+src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.ttf') format('truetype')
+}
+
+@font-face {
+font-family: 'NanumBarunGothic';
+font-style: normal;
+font-weight: 300;
+src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot');
+src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.ttf') format('truetype');
+}
+
+.nanumbarungothic * {
+font-family: 'NanumBarunGothic', sans-serif;
+}
+*{margin: 0; padding:0;}
+li{list-style: none;}
+a{text-decoration: none; display: block; color: #333;}
+legend{position: absolute;    left: -99999px;}
+fieldset{border: 0;}
+*{font-family: 'NanumBarunGothic';}
+*:focus {outline:none;}
+/* 기본설정 */
+#form{
+     width: 350px;
+     margin:0 auto;
+     padding: 0 13px;
+     background-color: #F9F9F9;
+     
+}
+.header_logo{
+     margin: 69px 0px 40px 0px;
+     text-align: center;}
+.join_title{
+     font-size: 14px;
+     padding-left: 9px;
+     font-weight: 400;
+     color: #707070;
+     margin: 30px 0px 5px 0px;
+     
+}
+input[type="text"]{
+     width: 350px;
+     height: 40px;
+     border-radius: 30px;
+     border: 0.3px solid #c8c8c8;
+     box-sizing: border-box;
+     padding-left: 10px;
+}
+
+/* span을 div로 바꾸고 input type이름 바꿔서 사이즈조절함...text라고 적힌 inputtype 바꿔도 되는건가?  
+=> 안됨...input type에 따라 기능이 설정되는 것이기 때문에 지정되어 있는 타입으로 설정해야함
+
+span일때는 왜 사이즈 조절이 안되지? 
+=>span이 인라인요소라서.. block요소를 적용해주어야함.
+
+*/
+
+/* 아웃라인 없애기 추가 20210607 */
+input[type="text"]:focus {
+     outline:none;
+}
+
+
+/* .join_row_birth{text-align: ;} */
+input[type="text_y"]
+{width:109px;
+height: 40px;
+float: left;
+box-sizing: border-box;
+border-radius: 30px;
+border: 0.3px solid #c8c8c8;
+margin-right:5px;
+padding-left: 10px;
+color: #a3a3a3;
+}
+
+.m_box > select{
+     width:109px;
+     height: 40px;
+     float:left;
+     border-radius: 30px;
+     margin-right:5px;
+     padding-left: 10px;
+     color: #707070;
+     border: 0.3px solid #c8c8c8;
+}
+
+input[type="text_d"]
+{width:109px;
+height: 40px;
+box-sizing: border-box;
+border-radius: 30px;
+border: 0.3px solid #c8c8c8;
+padding-left: 10px;
+color: #a3a3a3;}
+
+.join_row_birth::after{
+     content: '';
+     display: block;
+     clear: both;
+}
+
+.j_box > select{
+     width:350px;
+     height: 40px;
+     border-radius: 30px;
+     margin-right:5px;
+     padding-left: 10px;
+     color: #707070;
+     border: 0.3px solid #c8c8c8;
+}
+.join_row_email span{
+     font-size: 13px;
+     font-weight: 300;
+}
+.join_row_phone{
+     padding-top: 10px;}
+.c_box > select{
+     width:350px;
+     height: 40px;
+     border-radius: 30px;
+     margin-right:5px;
+     padding-left: 10px;
+     margin-bottom: 10px;
+     color: #707070;
+     border: 0.3px solid #c8c8c8;
+}
+.ph_box > input[type="text"]{
+     width: 240px;
+     height: 40px;
+     float: left;
+     margin-right: 5px;
+}
+.join_row_code:last-child{margin-right:0;}
+
+
+.no_bt > input[type="submit"] {
+     border-radius: 30px;
+     width: 105px;
+     height: 40px;
+     border: 0px;
+     background-color:#CF0035 ;
+     font-weight: 600;
+     color: white;
+     margin-bottom: 10px;
+}
+.ph_box > input[type="text_no"]{
+     width: 240px;
+     height: 40px;
+     margin-right: 5px;
+     border-radius: 30px;
+     padding-left: 10px;
+     margin-bottom: 25px;
+     border: 0.3px solid #c8c8c8;
+}
+.join_bt > input[type="submit"]{
+     width: 350px;
+     height: 40px;
+     background-color:#CF0035 ;
+     border-radius: 30px;
+     border: 0px;
+     font-weight: 600;
+     color: white;
+     margin-bottom: 50px;
+     
+}
